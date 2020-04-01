@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.backend.modules.lottery.dao.DeviceInfoDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="io.backend.modules.lottery.entity.DeviceInfoEntity" id="deviceInfoMap">
+        <result property="id" column="id"/>
+        <result property="isExternalStorageAvailable" column="is_external_storage_available"/>
+        <result property="cpuUsed" column="cpu_used"/>
+        <result property="availMemory" column="avail_memory"/>
+        <result property="totalMemory" column="total_memory"/>
+        <result property="availableInternalMemorySize" column="available_internal_memory_size"/>
+        <result property="totalInternalMemorySize" column="total_internal_memory_size"/>
+        <result property="availableExternalMemorySize" column="available_external_memory_size"/>
+        <result property="totalExternalMemorySize" column="total_external_memory_size"/>
+        <result property="deviceId" column="device_id"/>
+    </resultMap>
+
+
+</mapper>
