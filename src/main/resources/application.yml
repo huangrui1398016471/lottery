@@ -4,7 +4,7 @@ server:
     uri-encoding: UTF-8
     max-threads: 1000
     min-spare-threads: 30
-  port: 8088
+  port: 9003
   connection-timeout: 5000ms
   servlet:
     context-path: /lt
@@ -25,9 +25,9 @@ spring:
   redis:
     open: true  # 是否开启redis缓存  true开启   false关闭
     database: 1
-    host: 203.195.199.244
+    host: www.taxori.com
     port: 6379
-    password:    # 密码（默认为空）
+    password: root.123   # 密码（默认为空）
     timeout: 6000ms  # 连接超时时长（毫秒）
     jedis:
       pool:

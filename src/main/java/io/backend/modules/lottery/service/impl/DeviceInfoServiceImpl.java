@@ -23,6 +23,7 @@ public class DeviceInfoServiceImpl extends ServiceImpl<DeviceInfoDao, DeviceInfo
                 new QueryWrapper<DeviceInfoEntity>()
         );
 
+
         return new PageUtils(page);
     }
 
